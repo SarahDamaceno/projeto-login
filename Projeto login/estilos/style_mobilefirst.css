@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+
+body{
+    background-color: antiquewhite;
+}
+#container{
+    margin: 50px auto;
+    width: 20%;
+    background-color: white;
+    background-image: url(img/img.jpg);    padding: 50px;
+    padding-bottom: 70px;
+    background-size: 250px 250px; /*Editando a imagem no tamanho mobile firts*/
+    background-repeat: no-repeat  ;
+    background-position: center top;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    
+}
+
+#login{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+
+
+    
+}
+
+#enviar,
+#forgot_password{    
+    display: flex;
+    width: 190px;
+    align-items: center;
+    justify-content: center;
+    padding: 7px;
+}
+
+#enviar{
+    background-color: rgb(223, 158, 115);
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+
+#forgot_password{
+    background-color: white ;
+    color: rgb(223, 158, 115);
+    border-color: rgba(223, 158, 115); 
+    border-radius: 3px;
+}
+
+
+

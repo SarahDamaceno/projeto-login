@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+@Media screen and (min-width:992px){
+    #container{
+        background-size: 305px 305px;
+    }
+}
