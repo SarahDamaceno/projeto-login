@@ -1,7 +1,33 @@
 @charset "UTF-8";
 
-@Media screen and (min-width:992px){
+/*
+Pequenas telas: até 600px
+celular: de 300px até 768px
+Tablet: 768px até 992px
+Desktop: 992px até 1200px
+Grandes telas: acima de 1200px 
+*/
+
+@Media screen and (min-width:768px) and (max-width:992px){
     #container{
         background-size: 305px 305px;
     }
+
+    #login > h1{
+     margin-top: 80px;
+    }
+    
+   #label1,
+   #label2{
+    margin-left: 10px;
+
+   }
+
+
+   #forgot_password,
+   #enviar{
+
+    margin-left: 2.5px;
+   }
 }
+
