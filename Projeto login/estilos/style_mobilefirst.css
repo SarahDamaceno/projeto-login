@@ -46,18 +46,21 @@ body{
 #label1{
     margin-top: -5px;
     margin-left: -10px;
+    margin-left: -20px;
+
 
 }
 
 #label2{
     margin-top: -6px;
-    margin-left: -10px;
+    margin-left: -20px;
+    
 }
 
 #enviar,
 #forgot_password{    
     display: flex;
-    width: 190px;
+    width: 160px;
     align-items: center;
     justify-content: center;
     padding: 7px;
@@ -76,7 +79,7 @@ body{
     color: rgb(206, 165, 137);;
     border-color: rgb(206, 165, 137);;
     display: flex;
-    width: 200px;
+    width: 170px;
     transition-duration: 1s; /*Está crescendo apenas para um lado. ver isso.*/
     
 }
@@ -90,7 +93,7 @@ body{
 }
 
 #forgot_password:hover{
-    width: 200px;
+    width: 170px;
     transition-duration: 1s;
     background-color:rgb(206, 165, 137);
     color: white;

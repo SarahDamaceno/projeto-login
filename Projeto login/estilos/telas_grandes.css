@@ -5,5 +5,14 @@
         
         background-size: 405px 405px;
     }
+    
+    #login{
+        margin-top: 170px;
+    }
+
+    #enviar,
+    #forgot_password{
+        margin-left: 25px;
+    }
    
 }
