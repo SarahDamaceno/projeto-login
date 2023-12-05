@@ -39,6 +39,10 @@ section#login{
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.171);
 
+  /*Adicionando uma animação simples dentro dessa section login*/
+  transition: width .4s, height .3s; 
+  transition-timing-function: ease; /*Pra que de uma suavizada durante a transição*/
+
 }
 
 section#login > div#imagem{
@@ -55,6 +59,8 @@ section#login > div#formulario{
   padding:10px;
   
 }
+
+/*Vai sempre desenvolvendo e testando*/
 
 
 

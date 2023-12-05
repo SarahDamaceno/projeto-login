@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+/*
+   Typical device Breakpoints
+   -----------------
+   Pequenas telas: até 600px
+   Celular: de 600px até 768px
+   Tablet: 768 até 992px
+   Desktop: 992px até 1200px
+   Grandes telas: acima de 1200px
+*/
+
+@media screen and (min-width:768px) and (max-width:992px){
+
+    body{
+        background-image: linear-gradient(to top,  rgb(231, 210, 196),  rgb(206, 167, 140));
+    }
+    section#login{
+        width: 80vw;
+    }
+    /*Para posicionar a img ao lado e o login do outro */
+    section#login > div#imagem{
+        float: left; /*A propriedade float foi originalmente criada para permitir que o texto e outros elementos fluíssem ao redor de uma imagem, mas ao longo do tempo, passou a ser usada para layout de páginas da web.*/
+        width: 30%;
+        height: 100%;
+
+    }
+
+    section#login > div#formulario{
+        float: right;
+        width: 70%;
+    }
+
+}
+
+@media screen and (min-width:992px){
+
+    body{
+        background-image: linear-gradient(to top,  rgb(231, 210, 196 ) , rgba(181, 100, 46, 0.492));
+    }
+    section#login{
+        width: 950px;
+
+    }
+
+    section#login > div#imagem{
+        float: left;
+        width: 50%;
+        height: 100%;
+    }
+    
+    section#login > div#formulario{
+        float: right;
+        width: 50%;
+    }
+}
