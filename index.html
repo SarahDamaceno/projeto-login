@@ -5,10 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login
     </title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">    
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media_query.css">
 </head>
 <body>
+    <!--Rever min 6 para adicionar icons
+       Vai no Google icons - Using the icons in html.
+       pega o link pro cabeçalho do html
+       depois pega o link do icone e cola onde quiser que ele apareça
+    
+    
+    -->
     <main>
         <section id="login">
             <div id="imagem">
@@ -18,9 +27,25 @@
             <div id="formulario">
                <h1>Login</h1>
                <p>Seja bem-vindo(a) novamente.Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
-               <form action="login.js" method="post">
+               <form action="login.js" method="post" autocomplete="on">
                 
-               </form>
+                <div class="campo">
+                    <span class="material-icons">person</span> <!--Link do icon,so muda o nome. precisa estar em letras min-->                 
+                    <input type="email" name="login" id="ilogin" placeholder="Seu email" autocomplete="email"> 
+                     <label for="ilogin">Login</label>       
+                </div>
+
+                <div class="campo">
+                    <span class="material-icons">lock</span> <!--Link do icon,so muda o nome. precisa estar em letras min-->          
+                    <input type="password" name="isenha" id="isenha" placeholder="Sua senha" autocomplete="current-password">
+                    <label for="isenha">Senha</label>
+
+                </div>
+                <input type="submit" value="Entrar">
+                <button>Esqueci a senha</button> <!--Trabalhar com js aqui nesse botao-->
+                </form>
+
+                parei min 8:31
             </div>
         </section>
     </main>

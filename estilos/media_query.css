@@ -20,7 +20,7 @@
     }
     /*Para posicionar a img ao lado e o login do outro */
     section#login > div#imagem{
-        float: left; /*A propriedade float foi originalmente criada para permitir que o texto e outros elementos fluíssem ao redor de uma imagem, mas ao longo do tempo, passou a ser usada para layout de páginas da web.*/
+        float: left; /*A propriedade float foi originalmente criada para permitir que o texto e outros elementos fluíssem ao redor de uma imagem, mas ao longo do tempo, passou a ser usada para layout de páginas da web.Depois aprenderemos fazer isso com flexbox*/
         width: 30%;
         height: 100%;
 
@@ -30,6 +30,10 @@
         float: right;
         width: 70%;
     }
+    
+   div#formulario > p{
+    font-size:1.07em;
+  }
 
 }
 
@@ -44,13 +48,22 @@
     }
 
     section#login > div#imagem{
-        float: left;
+        float: right; /*Minha imagem vai flutuar a direita*/
         width: 50%;
         height: 100%;
     }
     
     section#login > div#formulario{
-        float: right;
+        float: left; /*O formulário vai flutuar a esquerda*/
         width: 50%;
     }
+
+    
+   div#formulario > p{
+    font-size:1em;
+   }
+
+   div#formulario > h1{
+     font-size: 2em;
+   }
 }
