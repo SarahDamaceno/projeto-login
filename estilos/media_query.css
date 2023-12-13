@@ -10,13 +10,14 @@
    Grandes telas: acima de 1200px
 */
 
-@media screen and (min-width:768px) and (max-width:992px){
+@media screen and (min-width:768px) and (max-width:992px){ /*Configuração p/ Tablet*/
 
     body{
         background-image: linear-gradient(to top,  rgb(231, 210, 196),  rgb(206, 167, 140));
     }
     section#login{
-        width: 80vw;
+        width:80vw;
+        height: 320px;
     }
     /*Para posicionar a img ao lado e o login do outro */
     section#login > div#imagem{
@@ -44,6 +45,7 @@
     }
     section#login{
         width: 950px;
+        height: 350px;
 
     }
 
@@ -61,6 +63,7 @@
     
    div#formulario > p{
     font-size:1em;
+    margin: 20px 0px;
    }
 
    div#formulario > h1{

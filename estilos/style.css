@@ -30,7 +30,6 @@ section#login{
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); /*Da linha 30 a 33 para posicionar no meio da tela*/
   overflow: hidden;
 
   background-color: white;
@@ -40,8 +39,11 @@ section#login{
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.171);
 
   /*Adicionando uma animação simples dentro dessa section login*/
+  transform: translate(-50%, -50%); /*Da linha 30 a 33 para posicionar no meio da tela*/
   transition: width .4s, height .3s; 
   transition-timing-function: ease; /*Pra que de uma suavizada durante a transição*/
+
+  /*Todas as transições e transformações é melhor colocar no final*/
 
 }
 
@@ -74,15 +76,39 @@ div#formulario > p{
 
 form > div.campo{ /*Vamos colorir o background do campo email e senha*/
   background-color: rgb(225, 174, 138);
+  border: 2px solid rgb(225, 174, 138);
   height: 40px;
-  border-radius: 5px;
-  margin: 5px 0px; /* a de cima de baixo- 5px, a da esquerda e direita-0px*/
+  border-radius: 8px;
+  margin: 8px 0px; /* a de cima de baixo- 5px, a da esquerda e direita-0px*/
 
 
 }
 
 div.campo > label{
    display: none; /*ele vai tirar o login e a senha q estao escritos ao lado do campo*/
+}
+
+div.campo > span{ /*formatando os icones*/
+  color: white;
+  /*background-color: black;*/
+  font-size: 2em;
+  width:40px
+}
+
+div.campo > input{ /*formatando as caixas*/
+  background-color:  rgb(218, 209, 206) ;
+  font-size: 1em;
+  width: calc(100% - 45px); /*subtraindo do valor do icone pra encaixar a caixa de login e senha.*/
+  height: 100%;
+  border: 0px;
+  border-radius: 8px;
+  padding: 4px;
+  transform: translateY(-6.5px); /*Para posicionar para cima  a caixa de login e senha no background*/
+  /*Sempre que voce tiver uma animação/transformação, coloque na última linha do seu seletor*/
+}
+
+div.campo > input:focus-within{ /*Quando eu clicar, a a caixa q está com foco, fica branca pra eu poder digitar*/
+  background-color: white;
 }
 
 form > input[type=submit]{
