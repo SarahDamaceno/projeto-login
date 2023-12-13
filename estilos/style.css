@@ -35,7 +35,7 @@ section#login{
 
   background-color: white;
   width: 250px;
-  height: 500px;
+  height: 570px; 
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.171);
 
@@ -72,9 +72,57 @@ div#formulario > p{
   font-size:1em;
 }
 
+form > div.campo{ /*Vamos colorir o background do campo email e senha*/
+  background-color: rgb(225, 174, 138);
+  height: 40px;
+  border-radius: 5px;
+  margin: 5px 0px; /* a de cima de baixo- 5px, a da esquerda e direita-0px*/
 
 
+}
 
+div.campo > label{
+   display: none; /*ele vai tirar o login e a senha q estao escritos ao lado do campo*/
+}
+
+form > input[type=submit]{
+  display: block; /*A linha desceu e ficou em uma so*/
+  font-size: 1em;
+  width: 100%; /*Não pode ser 100vw pq vw é a largura total, aqui é 100%  do conteiner*/
+  height: 35px;
+  background-color: rgb(200, 182, 176);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form > input[type=submit]:hover{
+  background-color: rgb(180, 156, 148) ;
+}
+
+form > a.botao{ /*No form, o link que está dentro da classe botao*/
+  display: block;
+  text-align: center;
+  font-size: 1em;
+  width: 100%;
+  height: 40px;
+  padding-top: 5px;
+  margin-top: 5px;
+  background-color: rgb(238, 232, 224);
+  border: 1px solid  rgb(215, 204, 200) ;
+  color:  rgb(181, 151, 140) ;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+form > a.botao:hover{
+  background-color:  rgb(255, 254, 253) ;
+}
+
+form > a.botao > i{
+  font-size: 0.8em;
+}
 
 
 
